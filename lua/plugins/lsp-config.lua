@@ -1,10 +1,10 @@
 -- Add lsp servers
 return {
   "neovim/nvim-lspconfig",
-  inlay_hints = {
-    enabled = true,
-  },
   opts = {
+    inlay_hints = {
+      enabled = true,
+    },
     servers = {
       bashls = {},
     },
