@@ -12,5 +12,11 @@ opt.fileformat = "unix"
 opt.shell = "bash"
 -- Set shell flags when executing commands
 opt.shellcmdflag = "-c"
--- Enable system clipboard integration
-opt.clipboard = "unnamedplus"
+-- Tweak the whitespace characters visibility
+local visibleWhitespace = opt.listchars
+visibleWhitespace:append({ tab = "» " })
+visibleWhitespace:append({ trail = "·" })
+visibleWhitespace:append({ multispace = "·" })
+visibleWhitespace:append({ extends = ">" })
+visibleWhitespace:append({ precedes = "<" })
+visibleWhitespace:append({ nbsp = "␣" })
