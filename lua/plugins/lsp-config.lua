@@ -8,6 +8,7 @@ return {
     servers = {
       bashls = {},
       denols = {},
+      gleam = {},
     },
   },
 }
