@@ -4,6 +4,8 @@
 
 local opt = vim.opt
 
+-- Set cursor style to blinking
+-- opt.guicursor = "n-v-c-sm:block,ci-ve:ver25,r-cr-o:hor20,i:block-blinkwait700-blinkoff400-blinkon250-Cursor/lCursor"
 -- Disable relative line numbers
 opt.relativenumber = false
 -- Set default EOL to LF
