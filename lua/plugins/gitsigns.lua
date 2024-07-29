@@ -5,8 +5,5 @@ return {
     current_line_blame_opts = {
       virt_text_pos = "right_align",
     },
-    current_line_blame_formatter_opts = {
-      relative_time = true,
-    },
   },
 }
