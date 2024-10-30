@@ -2,20 +2,22 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
-local opt = vim.opt
-
 -- Set cursor style to blinking
 -- opt.guicursor = "n-v-c-sm:block,ci-ve:ver25,r-cr-o:hor20,i:block-blinkwait700-blinkoff400-blinkon250-Cursor/lCursor"
 -- Disable relative line numbers
-opt.relativenumber = false
+-- opt.relativenumber = false
 -- Set default EOL to LF
-opt.fileformat = "unix"
+vim.o.fileformat = "unix"
 -- Set default terminal to bash
-opt.shell = "bash"
+vim.o.shell = "bash.exe"
 -- Set shell flags when executing commands
-opt.shellcmdflag = "-c"
+vim.o.shellcmdflag = "-c"
+-- Set shell to use backslashes (Windows only)
+vim.o.shellslash = true
+-- Set shell to not quote arguments
+vim.o.shellxquote = ""
 -- Tweak the whitespace characters visibility
-local visibleWhitespace = opt.listchars
+local visibleWhitespace = vim.opt.listchars
 visibleWhitespace:append({ tab = "» " })
 visibleWhitespace:append({ trail = "·" })
 visibleWhitespace:append({ multispace = "·" })
