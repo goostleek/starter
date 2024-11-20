@@ -7,15 +7,15 @@
 -- Disable relative line numbers
 -- opt.relativenumber = false
 -- Set default EOL to LF
-vim.o.fileformat = "unix"
+vim.opt.fileformat = "unix"
 -- Set default terminal to bash
-vim.o.shell = "bash.exe"
+vim.opt.shell = "bash.exe"
 -- Set shell flags when executing commands
-vim.o.shellcmdflag = "-c"
+vim.opt.shellcmdflag = "-c"
 -- Set shell to use backslashes (Windows only)
-vim.o.shellslash = true
+vim.opt.shellslash = true
 -- Set shell to not quote arguments
-vim.o.shellxquote = ""
+vim.opt.shellxquote = ""
 -- Tweak the whitespace characters visibility
 local visibleWhitespace = vim.opt.listchars
 visibleWhitespace:append({ tab = "» " })
