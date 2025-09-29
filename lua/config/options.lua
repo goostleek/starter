@@ -24,3 +24,5 @@ visibleWhitespace:append({ multispace = "·" })
 visibleWhitespace:append({ extends = ">" })
 visibleWhitespace:append({ precedes = "<" })
 visibleWhitespace:append({ nbsp = "␣" })
+vim.g.snacks_animate = false
+-- vim.g.snacks_position = "top"
